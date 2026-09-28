@@ -572,6 +572,26 @@
     margin-bottom: 1.5rem;
   }
   .ai-text h3 span { color: var(--gold); }
+  .project-eyebrow {
+    display: flex; align-items: center; gap: 8px;
+    color: var(--green);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .project-link {
+    display: inline-flex; align-items: center; gap: 12px;
+    margin-top: 0.5rem;
+    padding: 10px 0;
+    color: var(--gold);
+    font-size: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-dim);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .project-link:hover { color: var(--gold2); border-color: var(--gold2); }
+  .project-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
   .ai-text p {
     color: var(--text2);
     font-size: 13px;
@@ -1089,9 +1109,12 @@
     </div>
     <div class="ai-grid">
       <div class="ai-text fade-up">
-        <h3>Bridging <span>full-stack</span> expertise with the AI era.</h3>
-        <p>Most engineers are either full-stack developers who don't understand AI, or AI researchers who can't build production systems. I'm building the rarest combination: enterprise-grade engineering skills with hands-on AI integration experience.</p>
-        <p>Currently deepening expertise in LLM APIs, prompt engineering, and agentic workflows — actively building with the tools that are reshaping how software is made.</p>
+        <div class="project-eyebrow"><span class="status-dot" aria-hidden="true"></span>Currently building · Sholute</div>
+        <h3>Building <span>Sholute.</span><br>AI for career clarity.</h3>
+        <p>I'm building Sholute, an AI-powered career intelligence platform that connects what people have actually done with what they can learn next.</p>
+        <p>I've built a resume parsing and skill understanding engine using Llama 3.1 (8B), designed to evaluate skills in the context of roles, projects, and hands-on experience.</p>
+        <p>The next step: turning that understanding into skill-gap analysis and personalized learning roadmaps. It's where I bring full-stack engineering and applied AI together to build a product from the ground up.</p>
+        <a href="https://www.sholute.com" target="_blank" rel="noopener noreferrer" class="project-link">Explore Sholute <span aria-hidden="true">↗</span></a>
       </div>
       <div class="ai-stack fade-up">
         <div class="ai-row">
